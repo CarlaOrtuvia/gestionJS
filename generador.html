@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>generadorBoleto</title>
+</head>
+<body>
+    <div>
+        <a href="index.html" target="_blank" class="btn btn-outline-primary">Volver al inicio</a>
+        <a href="pagos.html" target="_blank" class="btn btn-outline-success">Ir a Pagos</a>
+    </div>
+    <div class="container">
+        <h1>Generador de Boletos de Pago</h1>
+        <hr>
+        <div class="row" id="items"></div>
+    </div>
+    <template id="template-card">
+        <div class="col-12 mb-2 col-md-4 ">
+          <div class="card">
+            <div class="card-body">
+              <h3>Nombre</h3>
+              <h4>Lote</h4>
+              <h5>Estado</h5>              
+              <button class="btn btn-dark">Generar Boleto</button>
+            </div>
+          </div>
+        </div>
+      </template>
+  
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Item</th>
+            <th scope="col">Exp. Ordinaria</th>
+            <th scope="col">Exp. Extraordinaria</th>
+                       
+          </tr>
+        </thead>
+        <tbody id="boletos">
+                
+
+        </tbody>
+        <tfoot>
+          <tr id="footer">
+            <th scope="row" colspan="5">Boleto Vacío</th>
+          </tr>
+        </tfoot>
+      </table>
+     
+    </div>
+
+    <template id="template-footer">
+        <th scope="row" colspan="2">Total a Pagar</th>
+        
+        <td>
+            <button class="btn btn-danger btn-sm" id="vaciar-boleto">
+                Vaciar todo
+            </button>
+            <button class="btn btn-success btn-sm" id="generar-cupon">
+              Generar cupón
+            </button>
+        </td>
+        <td class="font-weight-bold">$ <span>5000</span></td>
+    </template>
+    
+    <template id="template-boleto">
+      <tr>
+        <th scope="row">id</th>
+        <td>Nombre</td>
+        <td>Exp.Ordinaria</td>
+        <td>Exp.Extraordinaria</td>
+       
+      </tr>
+     
+    </template>
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="//pagado.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
