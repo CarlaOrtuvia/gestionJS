@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Pagos</title>
+</head>
+<body>
+    <div>
+        <a href="index.html" target="_blank" class="btn btn-outline-primary">Volver al Inicio</a>
+        <a href="generador.html" target="_blank" class="btn btn-outline-danger">Ir a Generar Boleto</a>
+    </div>
+    <div>
+        <h1>Control de Pagos Barrio Las Margaritas</h1>
+    </div>
+    <div class="container py-2">
+        <p class="lead"> Ingrese propietarios</p>
+        <form>
+            <input id= "lote" type="text" placeholder="Ingresa Lote" class="form-control my-2">
+            <input id = "monto" type="text" placeholder="Ingresa Monto" class="form-control my-2">
+            <button id="boton" class="btn btn-success" type="reset">Agregar</button>
+        </form>
+    </div>
+    <div class="container">
+        <table class="table" id="tabla">
+            <thead class="thead-inverse">
+                <tr>
+                    <th>Numero de Lote</th>
+                    <th>Monto Pagado</th>
+                </tr>
+            </thead>
+           
+            <tfoot id="te-footer">
+                <td>                
+                <p class="text-danger">TOTAL ACUMULADO</p>
+                </td>
+                
+         </tfoot>
+        </table>
+    </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="../ppa.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
