@@ -13,12 +13,12 @@ const capturar = () => {
   
  
    }
-    // const guardar = localStorage.setItem(lote, monto)
+   
    var loteCapturar = document.getElementById("lote").value;
    var montoCapturar = document.getElementById("monto").value;
    
    nuevoElemento = new Pagado (loteCapturar,montoCapturar)
-   //console.log(nuevoElemento)
+  
      
    agregar()
 }

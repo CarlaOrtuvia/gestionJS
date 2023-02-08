@@ -23,14 +23,14 @@ const fetchData = async () => {
     try{
         const res = await fetch('datos.json')
         const data = await res.json()
-       // console.log(data)
+      
         pintarCards(data)
     } catch (error) {
         console.log(error)
     }
 }
 const pintarCards = data => {
-   // console.log(data)
+  
  data.forEach(elementos => {
         templateCard.querySelector('h3').textContent = elementos.nombre
         templateCard.querySelector('h4').textContent = elementos.lote
@@ -44,8 +44,7 @@ const pintarCards = data => {
 }
 
 const addBoleto = e => {
-   // console.log(e.target)
-    //console.log(e.target.classList.contains('btn-dark'))
+  
     if(e.target.classList.contains('btn-dark')){
         setBoleto(e.target.parentElement)
     }
@@ -112,6 +111,7 @@ const pintarFooter = () => {
     boleto = {}
     pintarBoleto()
  })
+
  const btnGenerar = document.getElementById('generar-cupon')
  btnGenerar.addEventListener('click', () => {
     Swal.fire({
